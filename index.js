@@ -12,3 +12,11 @@ btn2.addEventListener("click", () => {
     response.style.visibility = "visible";
     questionContainer.style.background = "red";
 });
+
+const mousemouve = document.querySelector(".mousemouve");
+
+window.addEventListener("mousemove", (e) => {
+mousemouve.style.left =  e.pageX + "px";
+mousemouve.style.top = e.pageY + "px";
+mousemouve.style.transform = "translate(-50%, -50%)";
+})

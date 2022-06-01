@@ -22,3 +22,13 @@ p {
     width: 240px;
     margin: 10px auto 0;
 }
+
+.mousemouve {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    border-radius: 50px;
+    top : 50%;
+    left : 50%;
+}

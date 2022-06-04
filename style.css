@@ -1,34 +1,52 @@
-* {
-    box-sizing: border-box;
-    font-family: "Segeo UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-body {
-    text-align: center;
-    margin: 0;
-    color: white;
-    min-height: 200vh;
-}
-
-.click-event {
-    border: 6px solid white;
-    transition: 0.25s ease;
-    background: black;
-    padding: 10px;
-}
-
-p {
-    visibility: hidden;
-    width: 240px;
-    margin: 10px auto 0;
-}
-
-.mousemouve {
+.buttons {
+    display: grid;
+    width: 800px;
+    margin: 0 auto;
     position: absolute;
-    height: 50px;
-    width: 50px;
-    border: 2px solid red;
-    border-radius: 50px;
-    top : 50%;
-    left : 50%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 80px repeat(5, 80px);
+    grid-template-areas: 
+    
+    "res res res res"
+    "7 8 9 reset"
+    "4 5 6 reset"
+    "1 2 3 reset"
+    "0 dot plus minus"
+    "equal equal times div"
+    ;
+
+    border: 2px solid teal;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+button {
+    background-color: teal;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: rgb(5,190,190);
+}
+
+h4 {
+    grid-area: res;
+    text-align: right;
+    margin: 7px 10px 0 0;
+    font-size: 4rem;
+}
+
+#reset {
+    grid-area: reset;
+}
+
+#equal {
+    grid-area: equal;
 }

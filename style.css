@@ -1,11 +1,11 @@
 
 .buttons {
     display: grid;
-    width: 800px;
+    width: 500px;
     margin: 0 auto;
     position: absolute;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 80px repeat(5, 80px);
+    grid-template-rows: 80px repeat(5, 50px);
     grid-template-areas: 
     
     "res res res res"
